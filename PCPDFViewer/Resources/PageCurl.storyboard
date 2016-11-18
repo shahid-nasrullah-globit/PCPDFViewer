@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qug-ZM-duk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="HNz-00-KSI">
+            <objects>
+                <viewController id="Qug-ZM-duk" customClass="PCPDFPageViewController" customModule="PCPDFViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hvW-Al-ROs"/>
+                        <viewControllerLayoutGuide type="bottom" id="75m-Yx-nbx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rSj-ke-Zh2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="v9f-Os-ZnU" customClass="PCCenterScrollView" customModule="PCPDFViewer" customModuleProvider="target">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uwv-ad-L64">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="Qug-ZM-duk" id="Lre-gp-pX3"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v9f-Os-ZnU" firstAttribute="top" secondItem="rSj-ke-Zh2" secondAttribute="top" id="64S-Mp-PLs"/>
+                            <constraint firstItem="v9f-Os-ZnU" firstAttribute="leading" secondItem="rSj-ke-Zh2" secondAttribute="leading" id="8Sm-C0-4Vu"/>
+                            <constraint firstItem="75m-Yx-nbx" firstAttribute="top" secondItem="v9f-Os-ZnU" secondAttribute="bottom" id="cXz-xK-r4w"/>
+                            <constraint firstAttribute="trailing" secondItem="v9f-Os-ZnU" secondAttribute="trailing" id="eiv-kU-cvZ"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="uwv-ad-L64" id="aur-fr-UUv"/>
+                        <outlet property="scrollView" destination="v9f-Os-ZnU" id="Qfx-hc-Qsg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPp-XB-1ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1943.2" y="157.87106446776613"/>
+        </scene>
+    </scenes>
+</document>

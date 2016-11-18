@@ -11,9 +11,9 @@
 		93CAE3341DDF086E00826A1F /* PCCenterScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3301DDF086E00826A1F /* PCCenterScrollView.swift */; };
 		93CAE3351DDF086E00826A1F /* PCPDFPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */; };
 		93CAE3361DDF086E00826A1F /* PCPDFViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3321DDF086E00826A1F /* PCPDFViewcontroller.swift */; };
-		93CAE33A1DDF089E00826A1F /* PageCurl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE3381DDF089E00826A1F /* PageCurl.storyboard */; };
 		93CAE33C1DDF0AD900826A1F /* PCPDFViewer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE33B1DDF0AD900826A1F /* PCPDFViewer.podspec */; };
 		93CAE33E1DDF0CA300826A1F /* LISENCE in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE33D1DDF0CA300826A1F /* LISENCE */; };
+		93CAE3461DDF115E00826A1F /* PageCurl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE3451DDF115E00826A1F /* PageCurl.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +23,9 @@
 		93CAE3301DDF086E00826A1F /* PCCenterScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCCenterScrollView.swift; sourceTree = "<group>"; };
 		93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPDFPageViewController.swift; sourceTree = "<group>"; };
 		93CAE3321DDF086E00826A1F /* PCPDFViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPDFViewcontroller.swift; sourceTree = "<group>"; };
-		93CAE3391DDF089E00826A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PageCurl.storyboard; sourceTree = "<group>"; };
 		93CAE33B1DDF0AD900826A1F /* PCPDFViewer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PCPDFViewer.podspec; sourceTree = "<group>"; };
 		93CAE33D1DDF0CA300826A1F /* LISENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LISENCE; sourceTree = "<group>"; };
+		93CAE3451DDF115E00826A1F /* PageCurl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageCurl.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +73,17 @@
 		93CAE3371DDF088F00826A1F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				93CAE3381DDF089E00826A1F /* PageCurl.storyboard */,
+				93CAE3441DDF115E00826A1F /* Resources */,
 			);
 			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		93CAE3441DDF115E00826A1F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93CAE3451DDF115E00826A1F /* PageCurl.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +157,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CAE3461DDF115E00826A1F /* PageCurl.storyboard in Resources */,
 				93CAE33E1DDF0CA300826A1F /* LISENCE in Resources */,
 				93CAE33C1DDF0AD900826A1F /* PCPDFViewer.podspec in Resources */,
-				93CAE33A1DDF089E00826A1F /* PageCurl.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,17 +177,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		93CAE3381DDF089E00826A1F /* PageCurl.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93CAE3391DDF089E00826A1F /* Base */,
-			);
-			name = PageCurl.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		93CAE3281DDF085800826A1F /* Debug */ = {

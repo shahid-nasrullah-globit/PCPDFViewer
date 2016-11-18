@@ -24,25 +24,5 @@ public class PCCenterScrollView: UIScrollView {
 
         self.contentOffset = contentOffset
     }
-    
-//    override var contentOffset: CGPoint
-//    {
-//        set{
-//            let contentSize = self.contentSize
-//            let scrollViewSize = self.bounds.size
-//            
-//            if contentSize.width < scrollViewSize.width {
-//                contentOffset.x = -(scrollViewSize.width - contentSize.width) / 2.0
-//            }
-//            if contentSize.height < scrollViewSize.height {
-//                contentOffset.y = -(scrollViewSize.height - contentSize.height) / 2.0
-//            }
-//            
-//            super.contentOffset = contentOffset
-//        }
-//        get{
-//            return contentOffset
-//        }
-//    }
 
 }

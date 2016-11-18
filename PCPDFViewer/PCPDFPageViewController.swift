@@ -54,32 +54,33 @@ public class PCPDFPageViewController: UIViewController {
     func updateZoom(){
         let scale = min(self.scrollView.bounds.size.width / (self.imageView.image?.size.width)!, self.scrollView.bounds.size.height / (self.imageView.image?.size.height)!)
         
-        print("Calculated scale \(scale)")
         if scale < self.scrollView.minimumZoomScale {
             self.scrollView.minimumZoomScale = scale
         }
         self.scrollView.setZoomScale(self.scrollView.minimumZoomScale, animated: false)
         
-        print("Actual scale \(self.scrollView.zoomScale)")
-        //print("Minimun Zoom Level \(self.scrollView.minimumZoomScale)")
     }
     
     func drawPDFfromURL(page: Int) -> UIImage? {
         guard let page = pdfDocument.page(at: page) else { return nil }
         
         let pageRect = page.getBoxRect(.mediaBox)
-        let renderer = UIGraphicsImageRenderer(size: pageRect.size)
         
-        let img = renderer.image { ctx in
-            UIColor.white.set()
-            ctx.fill(pageRect)
-            
-            ctx.cgContext.translateBy(x: 0.0, y: pageRect.size.height);
-            ctx.cgContext.scaleBy(x: 1.0, y: -1.0);
-            
-            ctx.cgContext.drawPDFPage(page);
-        }
-        return img
+        UIGraphicsBeginImageContext(pageRect.size)
+        let ctx: CGContext = UIGraphicsGetCurrentContext()!
+        ctx.saveGState()
+        ctx.translateBy(x: 0.0, y: pageRect.size.height)
+        ctx.scaleBy(x: 1.0, y: -1.0)
+        ctx.setFillColor(gray: 1.0, alpha: 1.0)
+        ctx.fill(pageRect)
+        ctx.interpolationQuality = CGInterpolationQuality.high
+        ctx.setRenderingIntent(CGColorRenderingIntent.defaultIntent)
+        ctx.drawPDFPage(page)
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
+        ctx.restoreGState()
+        
+        
+        return image
     }
 
     override public func didReceiveMemoryWarning() {
