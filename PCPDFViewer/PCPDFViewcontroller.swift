@@ -30,11 +30,17 @@ public class PCPDFViewcontroller: UIPageViewController, UIPageViewControllerData
         if pdfTitle != nil {
             self.title = pdfTitle
         }
-
+        
         self.view.backgroundColor = UIColor.white
+        
+        guard (pdfPath) != nil else {
+            return
+        }
+        
+        
         self.navigationController?.setToolbarHidden(false, animated: true)
         
-        let url = NSURL(fileURLWithPath: pdfPath!)
+        let url = NSURL(fileURLWithPath: pdfPath)
         document = CGPDFDocument(url as CFURL)
         
         totalPages = document.numberOfPages
