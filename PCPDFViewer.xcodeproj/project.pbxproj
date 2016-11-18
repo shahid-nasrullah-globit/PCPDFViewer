@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		93CAE3271DDF085800826A1F /* PCPDFViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 93CAE3251DDF085800826A1F /* PCPDFViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93CAE3341DDF086E00826A1F /* PCCenterScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3301DDF086E00826A1F /* PCCenterScrollView.swift */; };
+		93CAE3351DDF086E00826A1F /* PCPDFPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */; };
+		93CAE3361DDF086E00826A1F /* PCPDFViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3321DDF086E00826A1F /* PCPDFViewcontroller.swift */; };
+		93CAE33A1DDF089E00826A1F /* PageCurl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE3381DDF089E00826A1F /* PageCurl.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93CAE3221DDF085800826A1F /* PCPDFViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PCPDFViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CAE3251DDF085800826A1F /* PCPDFViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCPDFViewer.h; sourceTree = "<group>"; };
 		93CAE3261DDF085800826A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93CAE3301DDF086E00826A1F /* PCCenterScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCCenterScrollView.swift; sourceTree = "<group>"; };
+		93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPDFPageViewController.swift; sourceTree = "<group>"; };
+		93CAE3321DDF086E00826A1F /* PCPDFViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPDFViewcontroller.swift; sourceTree = "<group>"; };
+		93CAE3391DDF089E00826A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PageCurl.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,22 @@
 		93CAE3241DDF085800826A1F /* PCPDFViewer */ = {
 			isa = PBXGroup;
 			children = (
+				93CAE3371DDF088F00826A1F /* Storyboard */,
+				93CAE3301DDF086E00826A1F /* PCCenterScrollView.swift */,
+				93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */,
+				93CAE3321DDF086E00826A1F /* PCPDFViewcontroller.swift */,
 				93CAE3251DDF085800826A1F /* PCPDFViewer.h */,
 				93CAE3261DDF085800826A1F /* Info.plist */,
 			);
 			path = PCPDFViewer;
+			sourceTree = "<group>";
+		};
+		93CAE3371DDF088F00826A1F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				93CAE3381DDF089E00826A1F /* PageCurl.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +115,7 @@
 				TargetAttributes = {
 					93CAE3211DDF085800826A1F = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -105,6 +126,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 93CAE3181DDF085800826A1F;
 			productRefGroup = 93CAE3231DDF085800826A1F /* Products */;
@@ -121,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CAE33A1DDF089E00826A1F /* PageCurl.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,10 +154,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CAE3341DDF086E00826A1F /* PCCenterScrollView.swift in Sources */,
+				93CAE3361DDF086E00826A1F /* PCPDFViewcontroller.swift in Sources */,
+				93CAE3351DDF086E00826A1F /* PCPDFPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93CAE3381DDF089E00826A1F /* PageCurl.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93CAE3391DDF089E00826A1F /* Base */,
+			);
+			name = PageCurl.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		93CAE3281DDF085800826A1F /* Debug */ = {
@@ -239,6 +276,7 @@
 		93CAE32B1DDF085800826A1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.quantum.PCPDFViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +296,7 @@
 		93CAE32C1DDF085800826A1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
