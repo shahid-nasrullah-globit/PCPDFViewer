@@ -12,6 +12,7 @@
 		93CAE3351DDF086E00826A1F /* PCPDFPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */; };
 		93CAE3361DDF086E00826A1F /* PCPDFViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3321DDF086E00826A1F /* PCPDFViewcontroller.swift */; };
 		93CAE33A1DDF089E00826A1F /* PageCurl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE3381DDF089E00826A1F /* PageCurl.storyboard */; };
+		93CAE33C1DDF0AD900826A1F /* PCPDFViewer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE33B1DDF0AD900826A1F /* PCPDFViewer.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPDFPageViewController.swift; sourceTree = "<group>"; };
 		93CAE3321DDF086E00826A1F /* PCPDFViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPDFViewcontroller.swift; sourceTree = "<group>"; };
 		93CAE3391DDF089E00826A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PageCurl.storyboard; sourceTree = "<group>"; };
+		93CAE33B1DDF0AD900826A1F /* PCPDFViewer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PCPDFViewer.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		93CAE3241DDF085800826A1F /* PCPDFViewer */ = {
 			isa = PBXGroup;
 			children = (
+				93CAE33B1DDF0AD900826A1F /* PCPDFViewer.podspec */,
 				93CAE3371DDF088F00826A1F /* Storyboard */,
 				93CAE3301DDF086E00826A1F /* PCCenterScrollView.swift */,
 				93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */,
@@ -143,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CAE33C1DDF0AD900826A1F /* PCPDFViewer.podspec in Resources */,
 				93CAE33A1DDF089E00826A1F /* PageCurl.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +335,7 @@
 				93CAE32C1DDF085800826A1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
