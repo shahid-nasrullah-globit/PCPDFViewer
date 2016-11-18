@@ -39,7 +39,6 @@
                             <constraint firstAttribute="trailing" secondItem="v9f-Os-ZnU" secondAttribute="trailing" id="eiv-kU-cvZ"/>
                         </constraints>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>

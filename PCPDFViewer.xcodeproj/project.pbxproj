@@ -7,25 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93CAE3271DDF085800826A1F /* PCPDFViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 93CAE3251DDF085800826A1F /* PCPDFViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93CAE3341DDF086E00826A1F /* PCCenterScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3301DDF086E00826A1F /* PCCenterScrollView.swift */; };
-		93CAE3351DDF086E00826A1F /* PCPDFPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */; };
-		93CAE3361DDF086E00826A1F /* PCPDFViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE3321DDF086E00826A1F /* PCPDFViewcontroller.swift */; };
-		93CAE33C1DDF0AD900826A1F /* PCPDFViewer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE33B1DDF0AD900826A1F /* PCPDFViewer.podspec */; };
-		93CAE33E1DDF0CA300826A1F /* LISENCE in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE33D1DDF0CA300826A1F /* LISENCE */; };
-		93CAE3461DDF115E00826A1F /* PageCurl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE3451DDF115E00826A1F /* PageCurl.storyboard */; };
+		93CAE34A1DDF2D8400826A1F /* PCPDFViewer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE3491DDF2D8400826A1F /* PCPDFViewer.podspec */; };
+		93CAE3521DDF2E3400826A1F /* PCCenterScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE34C1DDF2E3400826A1F /* PCCenterScrollView.swift */; };
+		93CAE3531DDF2E3400826A1F /* PCPDFPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE34D1DDF2E3400826A1F /* PCPDFPageViewController.swift */; };
+		93CAE3541DDF2E3400826A1F /* PCPDFViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CAE34E1DDF2E3400826A1F /* PCPDFViewcontroller.swift */; };
+		93CAE3551DDF2E3400826A1F /* PCPDFViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 93CAE34F1DDF2E3400826A1F /* PCPDFViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93CAE3561DDF2E3400826A1F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE3501DDF2E3400826A1F /* Info.plist */; };
+		93CAE3571DDF2E3400826A1F /* LISENCE in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE3511DDF2E3400826A1F /* LISENCE */; };
+		93CAE35A1DDF2E3A00826A1F /* PageCurl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CAE3591DDF2E3A00826A1F /* PageCurl.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93CAE3221DDF085800826A1F /* PCPDFViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PCPDFViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93CAE3251DDF085800826A1F /* PCPDFViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCPDFViewer.h; sourceTree = "<group>"; };
-		93CAE3261DDF085800826A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93CAE3301DDF086E00826A1F /* PCCenterScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCCenterScrollView.swift; sourceTree = "<group>"; };
-		93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPDFPageViewController.swift; sourceTree = "<group>"; };
-		93CAE3321DDF086E00826A1F /* PCPDFViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPDFViewcontroller.swift; sourceTree = "<group>"; };
-		93CAE33B1DDF0AD900826A1F /* PCPDFViewer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PCPDFViewer.podspec; sourceTree = "<group>"; };
-		93CAE33D1DDF0CA300826A1F /* LISENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LISENCE; sourceTree = "<group>"; };
-		93CAE3451DDF115E00826A1F /* PageCurl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageCurl.storyboard; sourceTree = "<group>"; };
+		93CAE3491DDF2D8400826A1F /* PCPDFViewer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PCPDFViewer.podspec; sourceTree = "<group>"; };
+		93CAE34C1DDF2E3400826A1F /* PCCenterScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCCenterScrollView.swift; sourceTree = "<group>"; };
+		93CAE34D1DDF2E3400826A1F /* PCPDFPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPDFPageViewController.swift; sourceTree = "<group>"; };
+		93CAE34E1DDF2E3400826A1F /* PCPDFViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPDFViewcontroller.swift; sourceTree = "<group>"; };
+		93CAE34F1DDF2E3400826A1F /* PCPDFViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPDFViewer.h; sourceTree = "<group>"; };
+		93CAE3501DDF2E3400826A1F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93CAE3511DDF2E3400826A1F /* LISENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LISENCE; sourceTree = "<group>"; };
+		93CAE3591DDF2E3A00826A1F /* PageCurl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageCurl.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +43,11 @@
 		93CAE3181DDF085800826A1F = {
 			isa = PBXGroup;
 			children = (
-				93CAE3241DDF085800826A1F /* PCPDFViewer */,
+				93CAE3581DDF2E3A00826A1F /* Resources */,
+				93CAE34B1DDF2E3400826A1F /* Classes */,
+				93CAE3501DDF2E3400826A1F /* Info.plist */,
+				93CAE3511DDF2E3400826A1F /* LISENCE */,
+				93CAE3491DDF2D8400826A1F /* PCPDFViewer.podspec */,
 				93CAE3231DDF085800826A1F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,33 +60,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93CAE3241DDF085800826A1F /* PCPDFViewer */ = {
+		93CAE34B1DDF2E3400826A1F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				93CAE33B1DDF0AD900826A1F /* PCPDFViewer.podspec */,
-				93CAE3371DDF088F00826A1F /* Storyboard */,
-				93CAE3301DDF086E00826A1F /* PCCenterScrollView.swift */,
-				93CAE3311DDF086E00826A1F /* PCPDFPageViewController.swift */,
-				93CAE3321DDF086E00826A1F /* PCPDFViewcontroller.swift */,
-				93CAE3251DDF085800826A1F /* PCPDFViewer.h */,
-				93CAE3261DDF085800826A1F /* Info.plist */,
-				93CAE33D1DDF0CA300826A1F /* LISENCE */,
+				93CAE34C1DDF2E3400826A1F /* PCCenterScrollView.swift */,
+				93CAE34D1DDF2E3400826A1F /* PCPDFPageViewController.swift */,
+				93CAE34E1DDF2E3400826A1F /* PCPDFViewcontroller.swift */,
+				93CAE34F1DDF2E3400826A1F /* PCPDFViewer.h */,
 			);
-			path = PCPDFViewer;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		93CAE3371DDF088F00826A1F /* Storyboard */ = {
+		93CAE3581DDF2E3A00826A1F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				93CAE3441DDF115E00826A1F /* Resources */,
-			);
-			name = Storyboard;
-			sourceTree = "<group>";
-		};
-		93CAE3441DDF115E00826A1F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				93CAE3451DDF115E00826A1F /* PageCurl.storyboard */,
+				93CAE3591DDF2E3A00826A1F /* PageCurl.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -93,7 +86,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93CAE3271DDF085800826A1F /* PCPDFViewer.h in Headers */,
+				93CAE3551DDF2E3400826A1F /* PCPDFViewer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,9 +150,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93CAE3461DDF115E00826A1F /* PageCurl.storyboard in Resources */,
-				93CAE33E1DDF0CA300826A1F /* LISENCE in Resources */,
-				93CAE33C1DDF0AD900826A1F /* PCPDFViewer.podspec in Resources */,
+				93CAE3571DDF2E3400826A1F /* LISENCE in Resources */,
+				93CAE35A1DDF2E3A00826A1F /* PageCurl.storyboard in Resources */,
+				93CAE3561DDF2E3400826A1F /* Info.plist in Resources */,
+				93CAE34A1DDF2D8400826A1F /* PCPDFViewer.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,9 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93CAE3341DDF086E00826A1F /* PCCenterScrollView.swift in Sources */,
-				93CAE3361DDF086E00826A1F /* PCPDFViewcontroller.swift in Sources */,
-				93CAE3351DDF086E00826A1F /* PCPDFPageViewController.swift in Sources */,
+				93CAE3521DDF2E3400826A1F /* PCCenterScrollView.swift in Sources */,
+				93CAE3541DDF2E3400826A1F /* PCPDFViewcontroller.swift in Sources */,
+				93CAE3531DDF2E3400826A1F /* PCPDFPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +281,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PCPDFViewer/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quantum.PCPDFViewer;
@@ -307,7 +301,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PCPDFViewer/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quantum.PCPDFViewer;

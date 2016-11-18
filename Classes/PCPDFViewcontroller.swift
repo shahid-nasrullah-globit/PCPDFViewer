@@ -38,7 +38,7 @@ public class PCPDFViewcontroller: UIPageViewController, UIPageViewControllerData
         }
         
         
-        self.navigationController?.setToolbarHidden(false, animated: true)
+        self.navigationController?.setToolbarHidden(false, animated: false)
         
         let url = NSURL(fileURLWithPath: pdfPath)
         document = CGPDFDocument(url as CFURL)
@@ -54,6 +54,16 @@ public class PCPDFViewcontroller: UIPageViewController, UIPageViewControllerData
         
         self.removeSingleTabToFlipGesture()
         self.enableNextPrevButtons()
+    }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setToolbarHidden(true, animated: true)
+    }
+    
+    public override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
     }
 
     override public func didReceiveMemoryWarning() {
@@ -72,7 +82,13 @@ public class PCPDFViewcontroller: UIPageViewController, UIPageViewControllerData
             controller.pdfDocument = document
             controller.pageNo = pageNo
             controller.delegate = self
-            controller.loadViewIfNeeded()
+            if #available(iOS 9.0, *) {
+                controller.loadViewIfNeeded()
+            }
+            else{
+                controller.loadView()
+            }
+            
             controllers.append(controller)
         }
         self.setViewControllers([(controllers[0])], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)

@@ -44,11 +44,11 @@ public class PCPDFPageViewController: UIViewController {
             self.scrollView.contentSize = (image?.size)!
             self.updateZoom()
         }
-        
     }
     
     override public func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        self.updateZoom()
     }
     
     func updateZoom(){
@@ -58,7 +58,6 @@ public class PCPDFPageViewController: UIViewController {
             self.scrollView.minimumZoomScale = scale
         }
         self.scrollView.setZoomScale(self.scrollView.minimumZoomScale, animated: false)
-        
     }
     
     func drawPDFfromURL(page: Int) -> UIImage? {
